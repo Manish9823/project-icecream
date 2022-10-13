@@ -29,9 +29,14 @@
   background-position: center;
 }
 
+.gallery {
+  background-color: white;
+  width: 100%;
+}
+
 .gallery__image {
   background-size: 100%;
-  background-image: linear-gradient(), url("./src/images/gallery.png");
+  background-image: url("../src/images/gallery.png");
   width: 364px;
   height: 122px;
   text-align: center;
@@ -41,17 +46,20 @@
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .gallery__image {
-    background-image: linear-gradient() url("./src/images/gallery@2x.png");
+    background-image: url("../src/images/gallery.png");
     background-size: 100%;
   }
 }
+/*
+.gallery__title {
+  display: none;
+}*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .gallery__image {
-    background-image: linear-gradient() url("./src/images/gallery.png");
+    background-image: url("./src/images/gallery@2x.png");
     width: 786px;
     height: 264px;
-    text-align: center;
     margin: 0 auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -60,7 +68,7 @@
 /*DESKTOP*/
 @media screen and (min-width: 1200px) {
   .gallery__image {
-    background-image: linear-gradient(), url("../src/images/gallery.png");
+    background-image: url("../src/images/gallery@4x.png");
     width: 1280px;
     height: 430px;
     background-size: 100%;
