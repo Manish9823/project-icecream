@@ -48,11 +48,21 @@
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .gallery__image {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./src/images/gallery.png");
+    background-image: linear-gradient() url("./src/images/gallery.png");
     width: 786px;
     height: 264px;
     text-align: center;
     margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+/*DESKTOP*/
+@media screen and (min-width: 1200px) {
+  .gallery__image {
+    background-image: linear-gradient(), url("../src/images/gallery.png");
+    width: 1280px;
+    height: 430px;
     background-size: 100%;
     background-repeat: no-repeat;
   }
