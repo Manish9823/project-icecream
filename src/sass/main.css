@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/demo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image {
+  background-size: 100%;
+  background-image: linear-gradient(), url("./src/images/gallery.png");
+  width: 364px;
+  height: 122px;
+  text-align: center;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .gallery__image {
+    background-image: linear-gradient() url("./src/images/gallery@2x.png");
+    background-size: 100%;
+  }
+}
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  .gallery__image {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./src/images/gallery.png");
+    width: 786px;
+    height: 264px;
+    text-align: center;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}/*# sourceMappingURL=main.css.map */
